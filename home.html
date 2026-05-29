@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — PTA NADP Int’l College</title>
+    <link rel="stylesheet" href="FRAMESTYLE.css">
+</head>
+<body id="top">
+    <button onclick="toggleSiteBrandingDropdown()" class="site-branding" aria-label="Navigation menu">
+        <img src="14.png" alt="PTA NADP School Logo">
+        <span>PTA NADP</span>
+    </button>
+
+    <div id="site-branding-dropdown" class="site-branding-dropdown">
+        <a href="home.html" class="dropdown-item">Home</a>
+        <a href="about.html" class="dropdown-item">About School</a>
+        <a href="teachers.html" class="dropdown-item">Teachers</a>
+        <a href="students.html" class="dropdown-item">Students</a>
+        <a href="latest-news.html" class="dropdown-item">Latest News</a>
+        <a href="gallery.html" class="dropdown-item">Gallery</a>
+        <a href="contact.html" class="dropdown-item">Contact</a>
+    </div>
+
+    <header class="main-nav">
+        <div class="nav-container">
+            <div class="logo"><a href="home.html">PTA NADP</a></div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About School</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="latest-news.html">Latest News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Welcome to Excellence</span>
+            <h1>PTA NADP <br class="mobile-break">Int’l College</h1>
+            <p>Nurturing leadership, inspiring innovation, and fostering academic brilliance for a global future.</p>
+            <div class="cta-group">
+                <a href="about.html" class="btn btn-primary">Learn More</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Slideshow Section -->
+    <section class="slideshow-section">
+        <div class="slideshow-container">
+            <div class="slideshow-wrapper">
+                <img id="slideshow-image" src="1.jpeg" alt="School Slideshow" class="slideshow-image">
+                <div class="slideshow-overlay"></div>
+            </div>
+            <div class="slideshow-controls">
+                <button id="prev-slide" class="slide-btn">❮</button>
+                <button id="next-slide" class="slide-btn">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-padding">
+        <div class="section-header">
+            <h2>Explore Our School</h2>
+            <p>Discover our community, curriculum, and campus life through dedicated pages.</p>
+        </div>
+        <div class="about-grid">
+            <div class="info-card">
+                <h3>School Overview</h3>
+                <p>PTA NADP Int’l College blends academic rigor with moral formation, innovation, and global outlook.</p>
+                <a href="about.html" class="read-more">Read About Us →</a>
+            </div>
+            <div class="info-card">
+                <h3>Student Life</h3>
+                <p>From clubs to championship teams, students grow through hands-on experiences and mentorship.</p>
+                <a href="students.html" class="read-more">Read Student Life →</a>
+            </div>
+            <div class="info-card">
+                <h3>Latest News</h3>
+                <p>Admissions, events, and academic announcements are published regularly to keep everyone informed.</p>
+                <a href="latest-news.html" class="read-more">Read News →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container section-padding">
+        <p style="text-align:center; color: var(--text-muted);">© 2026 PTA NADP Int’l College. All rights reserved.</p>
+    </footer>
+
+    <script src="FRAME.js"></script>
+</body>
+</html>
