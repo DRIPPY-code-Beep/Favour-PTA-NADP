@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students — PTA NADP Int’l College</title>
+    <link rel="stylesheet" href="FRAMESTYLE.css">
+</head>
+<body id="top">
+    <a href="home.html" class="site-branding">
+        <img src="14.png" alt="PTA NADP School Logo">
+        <span>PTA NADP</span>
+    </a>
+
+    <header class="main-nav">
+        <div class="nav-container">
+            <div class="logo"><a href="home.html">PTA NADP</a></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About School</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="students.html" class="active">Students</a></li>
+                <li><a href="latest-news.html">Latest News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        </div>
+    </header>
+
+    <section class="container section-padding">
+        <div class="page-header">
+            <h1>Student Life & Laurels</h1>
+            <p>Dynamic experiences outside the standard classroom layout.</p>
+        </div>
+
+        <div class="student-grid">
+            <div class="student-card fade-in" data-gallery="jet">
+                <div class="student-img-placeholder">🏆</div>
+                <h3>Jet Club Champions</h3>
+                <p>Our students claimed 1st place in the Regional Science & Innovation Exhibition.</p>
+            </div>
+            <div class="student-card fade-in" data-gallery="sports">
+                <div class="student-img-placeholder">⚽</div>
+                <h3>Sports & Athletics</h3>
+                <p>Fostering physical discipline through inter-house sports, football, and track events.</p>
+            </div>
+            <div class="student-card fade-in" data-gallery="debate">
+                <div class="student-img-placeholder">🗣️</div>
+                <h3>Debate & Press Club</h3>
+                <p>Building confident speakers and sharp editorial minds ready to engage society.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="student-gallery-overlay" class="student-lightbox" role="dialog" aria-modal="true" aria-labelledby="student-gallery-title">
+        <div class="student-lightbox-content">
+            <button class="student-lightbox-close" onclick="closeStudentGallery()" aria-label="Close gallery">×</button>
+            <div class="student-gallery-header">
+                <h2 id="student-gallery-title">Student Gallery</h2>
+                <p id="student-gallery-description" class="student-gallery-description"></p>
+            </div>
+            <div id="student-gallery-items" class="student-gallery-grid"></div>
+        </div>
+    </div>
+
+    <footer class="container section-padding">
+        <p style="text-align:center; color: var(--text-muted);">© 2026 PTA NADP Int’l College. All rights reserved.</p>
+    </footer>
+
+    <script src="FRAME.js"></script>
+</body>
+</html>

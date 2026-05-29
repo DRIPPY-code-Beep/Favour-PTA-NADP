@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — PTA NADP Int’l College</title>
+    <link rel="stylesheet" href="FRAMESTYLE.css">
+</head>
+<body id="top">
+    <a href="home.html" class="site-branding">
+        <img src="14.png" alt="PTA NADP School Logo">
+        <span>PTA NADP</span>
+    </a>
+
+    <header class="main-nav">
+        <div class="nav-container">
+            <div class="logo"><a href="home.html">PTA NADP</a></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About School</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="latest-news.html">Latest News</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        </div>
+    </header>
+
+    <section class="container section-padding">
+        <div class="page-header">
+            <h1>Media Gallery</h1>
+            <p>Snapshots of memorable milestones at PTA NADP Int’l College.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Classrooms -->
+            <div class="gallery-item" onclick="openGalleryContainer(this)">
+                <div class="gallery-placeholder">Classrooms</div>
+                <div class="gallery-overlay-text">Learning Spaces</div>
+                <div class="gallery-thumbs">
+                    <img src="1.jpeg" alt="Classroom 1" data-caption="Bright classroom with modular desks" onclick="openImageLightbox(this)">
+                    <img src="2.jpeg" alt="Classroom 2" data-caption="Interactive board and student stations" onclick="openImageLightbox(this)">
+                    <img src="3.jpeg" alt="Classroom 3" data-caption="Students collaborating in a project" onclick="openImageLightbox(this)">
+                    <img src="4.jpeg" alt="Classroom 4" data-caption="Flexible seating arrangement for group work" onclick="openImageLightbox(this)">
+                    <img src="5.jpeg" alt="Classroom 5" data-caption="Calm, well-lit learning environment" onclick="openImageLightbox(this)">
+                </div>
+            </div>
+
+            <!-- Laboratory -->
+            <div class="gallery-item" onclick="openGalleryContainer(this)">
+                <div class="gallery-placeholder">Laboratory</div>
+                <div class="gallery-overlay-text">Science Practical Labs</div>
+                <div class="gallery-thumbs">
+                    <img src="6.jpeg" alt="Lab 1" data-caption="Chemistry practical bench setup" onclick="openImageLightbox(this)">
+                    <img src="7.jpeg" alt="Lab 2" data-caption="Students conducting experiments" onclick="openImageLightbox(this)">
+                    <img src="8.jpeg" alt="Lab 3" data-caption="Well-equipped laboratory instruments" onclick="openImageLightbox(this)">
+                    <img src="9.jpeg" alt="Lab 4" data-caption="Microscope station for biology study" onclick="openImageLightbox(this)">
+                </div>
+            </div>
+
+            <!-- Graduation -->
+            <div class="gallery-item" onclick="openGalleryContainer(this)">
+                <div class="gallery-placeholder">Graduation</div>
+                <div class="gallery-overlay-text">Valedictory Service</div>
+                <div class="gallery-thumbs">
+                    <img src="10.jpeg" alt="Graduation 1" data-caption="Valedictory procession and ceremony" onclick="openImageLightbox(this)">
+                    <img src="12.jpeg" alt="Graduation 2" data-caption="Gowns and proud families" onclick="openImageLightbox(this)">
+                    <img src="13.jpg" alt="Graduation 3" data-caption="Cap toss and celebrations" onclick="openImageLightbox(this)">
+                    <img src="15.jpg" alt="Graduation 4" data-caption="Award presentation on stage" onclick="openImageLightbox(this)">
+                </div>
+            </div>
+
+            <!-- Excursion -->
+            <div class="gallery-item" onclick="openGalleryContainer(this)">
+                <div class="gallery-placeholder">Excursion</div>
+                <div class="gallery-overlay-text">Historical Study Tour</div>
+                <div class="gallery-thumbs">
+                    <img src="16.jpg" alt="Excursion 1" data-caption="Students exploring a historical site" onclick="openImageLightbox(this)">
+                    <img src="17.webp" alt="Excursion 2" data-caption="Field notes and guided tours" onclick="openImageLightbox(this)">
+                    <img src="18.webp" alt="Excursion 3" data-caption="Hands-on learning outdoors" onclick="openImageLightbox(this)">
+                    <img src="19.jpg" alt="Excursion 4" data-caption="Group photo at excursion site" onclick="openImageLightbox(this)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content" id="lightbox-text">Media View</div>
+    </div>
+
+    <footer class="container section-padding">
+        <p style="text-align:center; color: var(--text-muted);">© 2026 PTA NADP Int’l College. All rights reserved.</p>
+    </footer>
+
+    <script src="FRAME.js"></script>
+</body>
+</html>
